@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#DCEFC0"/>
+  <ellipse cx="50" cy="40" rx="100" ry="44" fill="#E8F5D4"/>
+  <ellipse cx="210" cy="226" rx="110" ry="46" fill="#E8F5D4"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M285 10 C 205 55, 140 85, 132 130 S 85 205, -30 245" stroke="#EADBA6" stroke-width="70"/>
+    <path d="M285 10 C 205 55, 140 85, 132 130 S 85 205, -30 245" stroke="#5DB6E6" stroke-width="50"/>
+    <path d="M285 10 C 205 55, 140 85, 132 130 S 85 205, -30 245" stroke="#83CBF0" stroke-width="34"/>
+    <path d="M285 10 C 205 55, 140 85, 132 130 S 85 205, -30 245" stroke="#fff" stroke-width="3" stroke-dasharray="22 40" opacity=".7" transform="translate(-5 -7)"/>
+    <path d="M285 10 C 205 55, 140 85, 132 130 S 85 205, -30 245" stroke="#fff" stroke-width="3" stroke-dasharray="16 52" stroke-dashoffset="30" opacity=".55" transform="translate(7 9)"/>
+  </g>
+  <g fill="#B9B4A6" stroke="#9A9686" stroke-width="2"><ellipse cx="176" cy="92" rx="11" ry="7"/><ellipse cx="90" cy="168" rx="9" ry="6"/><ellipse cx="108" cy="176" rx="6" ry="4"/></g>
+  <g stroke="#5E8F45" stroke-width="3" stroke-linecap="round"><path d="M200 138 v-26"/><path d="M212 142 v-22"/><path d="M188 146 v-20"/></g>
+  <g fill="#8A5A33"><ellipse cx="200" cy="108" rx="4" ry="9"/><ellipse cx="212" cy="116" rx="4" ry="8"/><ellipse cx="188" cy="122" rx="3.5" ry="7"/></g>
+  <g><ellipse cx="44" cy="76" rx="22" ry="6" fill="#A9CF86" opacity=".8"/><rect x="40" y="52" width="8" height="22" rx="3" fill="#8A5A33"/><circle cx="44" cy="44" r="24" fill="#6CBF5B" stroke="#3F8A3C" stroke-width="2"/><circle cx="36" cy="36" r="10" fill="#93D47E"/></g>
+  <g><ellipse cx="214" cy="226" rx="18" ry="5" fill="#A9CF86" opacity=".8"/><rect x="210" y="204" width="7" height="20" rx="3" fill="#8A5A33"/><circle cx="214" cy="198" r="19" fill="#6CBF5B" stroke="#3F8A3C" stroke-width="2"/><circle cx="208" cy="192" r="8" fill="#93D47E"/></g>
+  <g stroke="#A7CF7C" stroke-width="2.4" stroke-linecap="round" fill="none"><path d="M70 120 l-4 -9 M70 120 v-11 M70 120 l4 -9"/><path d="M168 220 l-4 -9 M168 220 v-11 M168 220 l4 -9"/><path d="M28 200 l-4 -9 M28 200 v-11 M28 200 l4 -9"/></g>
+</svg>

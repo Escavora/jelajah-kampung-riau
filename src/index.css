@@ -1,0 +1,501 @@
+/* Subset latin saja supaya cache offline tetap kecil. */
+@import '@fontsource/baloo-2/latin-600.css';
+@import '@fontsource/baloo-2/latin-700.css';
+@import '@fontsource/baloo-2/latin-800.css';
+@import '@fontsource/lexend/latin-400.css';
+@import '@fontsource/lexend/latin-500.css';
+@import '@fontsource/lexend/latin-600.css';
+@import 'tailwindcss';
+
+/* Layar pendek: HP yang dipegang mendatar. Dipakai sebagai `pendek:` di kelas Tailwind. */
+@custom-variant pendek (@media (max-height: 520px));
+
+/* Token dari design.md bagian 3 sampai 5 dan 14, ditulis dalam format Tailwind v4. */
+@theme {
+  /* Dunia Melayu Riau: marun songket untuk bingkai, emas untuk benang dan aksi, gading untuk lantai. */
+  --color-marun-500: #9e2b3b;
+  --color-marun-700: #7a1f2b;
+  --color-marun-900: #4a1019;
+  --color-emas-100: #fcf0cc;
+  --color-emas-400: #f0b323;
+  --color-emas-600: #b88507;
+  --color-gading-50: #fffcf5;
+  --color-gading-100: #fbf6e9;
+  --color-gading-200: #efe4c8;
+
+  --color-tanah-600: #5e5b52;
+  --color-tanah-900: #2b2a26;
+
+  --color-alam-100: #e3f3e5;
+  --color-alam-500: #3e9b4f;
+  --color-alam-700: #2a6b37;
+  --color-buatan-100: #fdebd9;
+  --color-buatan-500: #f58220;
+  --color-buatan-700: #a84c08;
+  --color-diskusi-100: #efe8fa;
+  --color-diskusi-500: #8e6ccb;
+
+  /* Biru hanya untuk air, bukan untuk bingkai. */
+  --color-langit-500: #1e88d0;
+  --color-langit-700: #13609a;
+  --color-sungai-300: #7cc4ee;
+  --color-kabut-400: #b8b4a6;
+
+  --font-display: 'Baloo 2', system-ui, sans-serif;
+  --font-body: Lexend, system-ui, sans-serif;
+
+  --text-display: 48px;
+  --text-display--line-height: 1.1;
+  --text-display--font-weight: 800;
+  --text-fase: 36px;
+  --text-fase--line-height: 1.15;
+  --text-fase--font-weight: 700;
+  --text-sub: 26px;
+  --text-sub--line-height: 1.2;
+  --text-sub--font-weight: 600;
+  --text-instruksi: 24px;
+  --text-instruksi--line-height: 1.4;
+  --text-instruksi--font-weight: 500;
+  --text-isi: 22px;
+  --text-isi--line-height: 1.5;
+  --text-tombol: 22px;
+  --text-tombol--line-height: 1;
+  --text-tombol--font-weight: 600;
+  --text-kecil: 18px;
+  --text-kecil--line-height: 1.2;
+  --text-kecil--font-weight: 600;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+
+  --shadow-rest: 0 2px 5px rgba(74, 16, 25, 0.16);
+  --shadow-lift: 0 12px 24px rgba(74, 16, 25, 0.26);
+  --shadow-tertanam: inset 0 2px 6px rgba(43, 42, 38, 0.18);
+
+  --ease-pegas: cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+/* Target sentuh minimal design.md 5: 64 x 64 px. */
+@utility tap {
+  min-width: 64px;
+  min-height: 64px;
+}
+
+:root {
+  /* Tinggi bilah atas, bilah bawah, dan tinggi Badrul di bilah bawah. Besar di tablet, kecil di HP. */
+  --atas: 88px;
+  --bawah: 112px;
+  --badrul: 96px;
+  --motion-fast: 150ms;
+  --motion-base: 250ms;
+  --motion-slow: 400ms;
+  --motion-scene: 600ms;
+}
+
+@media (max-height: 520px) {
+  :root {
+    --atas: 56px;
+    --bawah: 76px;
+    --badrul: 62px;
+  }
+}
+
+/* HP tegak: bilah bawah memuat instruksi di baris sendiri. */
+@media (max-width: 639px) and (orientation: portrait) {
+  :root {
+    --atas: 64px;
+    --bawah: 148px;
+    --badrul: 64px;
+  }
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-gading-100);
+  color: var(--color-tanah-900);
+  font-family: var(--font-body);
+  caret-color: var(--color-marun-700);
+  scrollbar-color: var(--color-emas-600) var(--color-gading-100);
+  scrollbar-width: thin;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+::selection {
+  background: var(--color-emas-100);
+  color: var(--color-marun-900);
+}
+
+/* Cincin dua warna: emas terbaca di atas marun, marun terbaca di atas gading. */
+:focus-visible {
+  outline: 4px solid var(--color-emas-400);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 8px var(--color-marun-900);
+}
+
+@keyframes gelombang {
+  0%,
+  100% {
+    height: 30%;
+  }
+  50% {
+    height: 100%;
+  }
+}
+
+@keyframes angguk {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+
+/* Elemen alam tumbuh saat ditemukan (design.md 7.5). */
+@keyframes tumbuh {
+  from {
+    transform: scale(0.6);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes naik {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Garis warga yang kurang tepat memudar pelan (design.md 7.8). */
+@keyframes pudar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Denyut pelan pada titik tarik dan lokasi kejadian. Jauh di bawah 3 kali per detik. */
+@keyframes denyut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.18);
+  }
+}
+
+/* Pucuk rebung disepuh emas dari pangkal ke ujung saat fase selesai. */
+@keyframes sepuh {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+/* ---- Gerak interaktif ---------------------------------------------------------------------
+   Semua hanya transform dan opacity. Tidak ada getar atau kilat (design.md 10 dan 13). */
+
+/* Badrul meloncat gembira: naik, mendarat gepeng sedikit, memantul kecil. */
+@keyframes loncat {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  28% {
+    transform: translateY(-24px) scale(0.96, 1.06);
+  }
+  58% {
+    transform: translateY(0) scale(1.07, 0.93);
+  }
+  78% {
+    transform: translateY(-6px) scale(1, 1);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* Badrul berpikir: kepala miring pelan, lalu kembali. Dipakai saat petunjuk, bukan tanda salah. */
+@keyframes miring {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  35%,
+  70% {
+    transform: rotate(-9deg) translateX(-2px);
+  }
+}
+
+/* Bernapas pelan saat diam, supaya maskot terasa hidup. */
+@keyframes bernapas {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-3px) scale(0.99, 1.02);
+  }
+}
+
+/* Bangunan jatuh ke petak lalu memantul (design.md 10). */
+@keyframes jatuh {
+  0% {
+    transform: translateY(-34px) scale(1.12);
+    opacity: 0;
+  }
+  45% {
+    transform: translateY(0) scale(1.04, 0.92);
+    opacity: 1;
+  }
+  68% {
+    transform: translateY(-7px) scale(0.99, 1.03);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* Partikel menyebar dari titik temu: daun, debu, bintang. Arah diatur lewat --dx, --dy, --rot. */
+@keyframes sebar {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--dx), var(--dy)) rotate(var(--rot)) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Riak melebar di tanah saat elemen mendarat. */
+@keyframes riak {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+/* Bintang dicap di pin peta: besar, berputar, lalu menempel. */
+@keyframes cap {
+  0% {
+    transform: scale(2.6) rotate(-35deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.88) rotate(7deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Penghitung stiker membesar sebentar tiap bertambah. */
+@keyframes bump {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.16);
+  }
+}
+
+/* Pin melompat kecil saat diketuk. */
+@keyframes lompat {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  35% {
+    transform: translateY(-14px) scale(0.94, 1.08);
+  }
+  70% {
+    transform: translateY(0) scale(1.08, 0.92);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* Benang emas ditarik dari warga ke tempat (pathLength dinormalkan ke 1). */
+@keyframes tarik {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Petak sah bernapas selama bangunan diseret. */
+@keyframes napas {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.035);
+    opacity: 1;
+  }
+}
+
+/* Tirai songket meluncur ke kiri membuka layar berikutnya. */
+@keyframes tirai {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-102%);
+  }
+}
+
+@keyframes tirai-pudar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Muncul dari bawah bergiliran (daftar, foto kenangan). Selalu pakai delay terbatas. */
+@keyframes terbit {
+  from {
+    transform: translateY(20px) scale(0.92);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Kilau emas melayang naik pelan di rapor. */
+@keyframes kilau {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translateY(-120px) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Kilau air sungai: garis putih mengalir sepanjang aliran. */
+@keyframes aliran {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -104;
+  }
+}
+
+/* Masuk bergilir: tiap anak elemen mengatur waktunya lewat --tunda. Di reduce motion tanpa tunda. */
+.masuk-bergilir {
+  animation: terbit 560ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--tunda, 0ms);
+}
+
+/* Kartu guna mengapung pelan seperti gelembung. Durasi dan tunda diatur per kartu. */
+@keyframes mengapung {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-0.8deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.8deg);
+  }
+}
+
+.ambient-apung {
+  animation: mengapung var(--dur, 5s) ease-in-out infinite;
+  animation-delay: var(--tunda, 0s);
+}
+
+.ambient-bernapas {
+  animation: bernapas 3.4s ease-in-out infinite;
+}
+.ambient-aliran {
+  animation: aliran 7s linear infinite;
+}
+.ambient-kilau {
+  animation: kilau 4.2s ease-out infinite;
+}
+.tirai-songket {
+  animation: tirai 650ms cubic-bezier(0.7, 0, 0.2, 1) both;
+}
+.partikel {
+  animation: sebar 720ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.riak-tanah {
+  animation: riak 640ms ease-out forwards;
+}
+
+/* Reduce motion: gerak ruang dikurangi, umpan balik yang bermakna tetap ada. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: var(--motion-fast) !important;
+    transition-duration: var(--motion-fast) !important;
+    transition-property: opacity !important;
+  }
+  /* Gerak berulang dan hiasan partikel dimatikan sepenuhnya. */
+  .ambient-bernapas,
+  .ambient-aliran,
+  .ambient-kilau,
+  .partikel,
+  .riak-tanah {
+    animation: none !important;
+    opacity: 0;
+  }
+  .ambient-bernapas,
+  .ambient-aliran {
+    opacity: 1;
+  }
+  /* Kartu mengapung: tetap terlihat, hanya diam. */
+  .ambient-apung {
+    animation: none !important;
+  }
+  .masuk-bergilir {
+    animation-delay: 0ms !important;
+  }
+  /* Tirai berganti jadi pudar, bukan meluncur. */
+  .tirai-songket {
+    animation: tirai-pudar var(--motion-base) ease-out both !important;
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "I1",
+    "nama": "Ragam lingkungan",
+    "level": {
+      "mulai": "Menata kurang dari 3 jenis lingkungan",
+      "berkembang": "Menata 3 sampai 5 jenis dari satu kategori dominan",
+      "mahir": "Menata 6 atau lebih jenis yang seimbang alam dan buatan"
+    }
+  },
+  {
+    "id": "I2",
+    "nama": "Klasifikasi",
+    "level": {
+      "mulai": "Label benar kurang dari 50%",
+      "berkembang": "Label benar 50 sampai 80% atau benar setelah lebih dari 2 kali ubah",
+      "mahir": "Label benar lebih dari 80% termasuk elemen diskusi"
+    }
+  },
+  {
+    "id": "I3",
+    "nama": "Manfaat",
+    "level": {
+      "mulai": "Kurang dari 2 kartu benar per elemen",
+      "berkembang": "2 kartu benar per elemen",
+      "mahir": "2 kartu benar dan mengisi manfaat versi sendiri yang relevan"
+    }
+  },
+  {
+    "id": "I4",
+    "nama": "Kebutuhan warga",
+    "level": {
+      "mulai": "Benar 1 dari 3",
+      "berkembang": "Benar 2 dari 3, atau 3 dengan petunjuk",
+      "mahir": "Benar 3 dari 3 dan menambah elemen sendiri saat kurang"
+    }
+  },
+  {
+    "id": "I5",
+    "nama": "Tindakan",
+    "level": {
+      "mulai": "Benar 1 dari 3",
+      "berkembang": "Benar 2 dari 3, atau 3 dengan percobaan ulang",
+      "mahir": "Benar 3 dari 3 pada percobaan pertama"
+    }
+  }
+]

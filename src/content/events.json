@@ -1,0 +1,89 @@
+[
+  {
+    "id": "sungai-sampah",
+    "judul": "Sungai Siak penuh sampah",
+    "cerita": "Banyak sampah plastik mengapung di Sungai Siak. Airnya jadi bau dan ikan sulit hidup.",
+    "audio": "/audio/kejadian/sungai-sampah.mp3",
+    "tindakan": [
+      {
+        "id": "pungut-sampah",
+        "label": "Pungut sampah",
+        "jenis": "tepat",
+        "umpanBalik": "Warga gotong royong memungut sampah. Sungai Siak kembali bersih dan ikan bisa berenang lagi.",
+        "audio": "/audio/kejadian/sungai-sampah-pungut.mp3"
+      },
+      {
+        "id": "biarkan",
+        "label": "Biarkan",
+        "jenis": "netral",
+        "umpanBalik": "Wah, sungainya masih bau. Coba cara lain.",
+        "audio": "/audio/kejadian/sungai-sampah-biarkan.mp3"
+      },
+      {
+        "id": "ikut-buang",
+        "label": "Ikut buang",
+        "jenis": "merusak",
+        "umpanBalik": "Sampahnya makin banyak dan ikan makin sulit bernapas. Coba cara lain.",
+        "audio": "/audio/kejadian/sungai-sampah-buang.mp3"
+      }
+    ]
+  },
+  {
+    "id": "pohon-ditebang",
+    "judul": "Pohon ditebang",
+    "cerita": "Pohon di pinggir kampung ditebang. Udara jadi panas dan burung kehilangan rumah.",
+    "audio": "/audio/kejadian/pohon-ditebang.mp3",
+    "tindakan": [
+      {
+        "id": "tanam-pohon",
+        "label": "Tanam pohon",
+        "jenis": "tepat",
+        "umpanBalik": "Pohon baru mulai tumbuh. Nanti udara jadi sejuk dan burung kembali.",
+        "audio": "/audio/kejadian/pohon-ditebang-tanam.mp3"
+      },
+      {
+        "id": "tebang-lagi",
+        "label": "Tebang lagi",
+        "jenis": "merusak",
+        "umpanBalik": "Wah, kampungnya makin panas dan gersang. Coba cara lain.",
+        "audio": "/audio/kejadian/pohon-ditebang-tebang.mp3"
+      },
+      {
+        "id": "tidak-peduli",
+        "label": "Tidak peduli",
+        "jenis": "netral",
+        "umpanBalik": "Burung masih belum punya rumah. Coba cara lain.",
+        "audio": "/audio/kejadian/pohon-ditebang-diam.mp3"
+      }
+    ]
+  },
+  {
+    "id": "jalan-tergenang",
+    "judul": "Jalan tergenang",
+    "cerita": "Hujan deras turun semalam. Jalan kampung tergenang karena selokan tersumbat sampah.",
+    "audio": "/audio/kejadian/jalan-tergenang.mp3",
+    "tindakan": [
+      {
+        "id": "bersihkan-selokan",
+        "label": "Bersihkan selokan",
+        "jenis": "tepat",
+        "umpanBalik": "Selokan bersih dan air mengalir lancar. Jalan kampung kering kembali.",
+        "audio": "/audio/kejadian/jalan-tergenang-bersih.mp3"
+      },
+      {
+        "id": "buang-ke-selokan",
+        "label": "Sampah ke selokan",
+        "jenis": "merusak",
+        "umpanBalik": "Selokan makin tersumbat dan genangan makin tinggi. Coba cara lain.",
+        "audio": "/audio/kejadian/jalan-tergenang-buang.mp3"
+      },
+      {
+        "id": "main-genangan",
+        "label": "Main genangan",
+        "jenis": "netral",
+        "umpanBalik": "Airnya kotor dan bisa membuat sakit. Coba cara lain.",
+        "audio": "/audio/kejadian/jalan-tergenang-main.mp3"
+      }
+    ]
+  }
+]

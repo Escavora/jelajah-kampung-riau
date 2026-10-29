@@ -1,0 +1,10 @@
+[
+  { "id": "avatar-kucing", "nama": "Kucing" },
+  { "id": "avatar-burung", "nama": "Burung" },
+  { "id": "avatar-ikan", "nama": "Ikan" },
+  { "id": "avatar-kura", "nama": "Kura-kura" },
+  { "id": "avatar-kelinci", "nama": "Kelinci" },
+  { "id": "avatar-tupai", "nama": "Tupai" },
+  { "id": "avatar-siput", "nama": "Siput" },
+  { "id": "avatar-kerang", "nama": "Kerang" }
+]

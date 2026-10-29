@@ -1,0 +1,247 @@
+[
+  {
+    "id": "sungai-siak",
+    "nama": "Sungai Siak",
+    "kategori": "alam",
+    "diskusi": false,
+    "info": "Sungai Siak mengalir membelah Kota Pekanbaru. Sungai ini sudah ada sebelum kota dibangun. Jadi Sungai Siak termasuk lingkungan alam.",
+    "audio": "/audio/elemen/sungai-siak.mp3",
+    "manfaat": [
+      "tempat-ikan",
+      "jalur-perahu",
+      "sumber-air"
+    ],
+    "pin": {
+      "x": 58.3,
+      "y": 36.2
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/sungai-siak.webp"
+  },
+  {
+    "id": "anak-sungai",
+    "nama": "Anak Sungai",
+    "kategori": "alam",
+    "diskusi": false,
+    "info": "Anak sungai adalah sungai kecil yang mengalir ke sungai besar. Airnya mengalir sendiri tanpa dibuat manusia. Jadi anak sungai termasuk lingkungan alam.",
+    "audio": "/audio/elemen/anak-sungai.mp3",
+    "manfaat": [
+      "sumber-air",
+      "tempat-ikan"
+    ],
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/anak-sungai.svg"
+  },
+  {
+    "id": "hutan",
+    "nama": "Hutan",
+    "kategori": "alam",
+    "diskusi": false,
+    "info": "Pohon di hutan tumbuh sendiri dari biji yang jatuh. Hutan menjadi rumah bagi burung dan hewan lain. Jadi hutan termasuk lingkungan alam.",
+    "audio": "/audio/elemen/hutan.mp3",
+    "manfaat": [
+      "udara-segar",
+      "rumah-hewan"
+    ],
+    "pin": {
+      "x": 86.7,
+      "y": 15.0
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/hutan.webp"
+  },
+  {
+    "id": "rawa",
+    "nama": "Rawa",
+    "kategori": "alam",
+    "diskusi": false,
+    "info": "Rawa adalah tanah basah yang selalu digenangi air. Di Riau banyak rawa yang terbentuk sendiri. Jadi rawa termasuk lingkungan alam.",
+    "audio": "/audio/elemen/rawa.mp3",
+    "manfaat": [
+      "menampung-air",
+      "rumah-hewan"
+    ],
+    "pin": {
+      "x": 10.8,
+      "y": 65.0
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/rawa.svg"
+  },
+  {
+    "id": "tanah-lapang",
+    "nama": "Tanah Lapang",
+    "kategori": "alam",
+    "diskusi": false,
+    "info": "Tanah lapang adalah tanah datar yang luas. Rumputnya tumbuh sendiri tanpa ditanam manusia. Jadi tanah lapang termasuk lingkungan alam.",
+    "audio": "/audio/elemen/tanah-lapang.mp3",
+    "manfaat": [
+      "tempat-bermain",
+      "tempat-berkumpul"
+    ],
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/tanah-lapang.svg"
+  },
+  {
+    "id": "rumah",
+    "nama": "Rumah",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Rumah dibangun manusia dari kayu, bata, dan semen. Di rumah kita tidur, makan, dan berkumpul bersama keluarga. Jadi rumah termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/rumah.mp3",
+    "manfaat": [
+      "tempat-tinggal",
+      "berteduh"
+    ],
+    "pin": {
+      "x": 18.8,
+      "y": 86.2
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/rumah.webp"
+  },
+  {
+    "id": "selaso-jatuh-kembar",
+    "nama": "Selaso Jatuh Kembar",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Selaso Jatuh Kembar adalah rumah adat Melayu Riau. Bangunan ini dipakai sebagai balai pertemuan adat. Jadi Selaso Jatuh Kembar termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/selaso-jatuh-kembar.mp3",
+    "manfaat": [
+      "tempat-musyawarah",
+      "belajar-budaya"
+    ],
+    "pin": {
+      "x": 14.6,
+      "y": 20.0
+    },
+    "rujukan": "Sularti (2024). Representasi Makna Ragam Hias pada Rumah Adat Selaso Jatuh Kembar Riau. Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/selaso-jatuh-kembar.webp"
+  },
+  {
+    "id": "masjid-an-nur",
+    "nama": "Masjid An-Nur",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Masjid An-Nur punya payung besar yang bisa membuka dan menutup. Masjid ini dibangun manusia sebagai tempat beribadah. Jadi Masjid An-Nur termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/masjid-an-nur.mp3",
+    "manfaat": [
+      "tempat-ibadah",
+      "tempat-berkumpul"
+    ],
+    "pin": {
+      "x": 60.0,
+      "y": 20.6
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/masjid-an-nur.webp"
+  },
+  {
+    "id": "sekolah",
+    "nama": "Sekolah",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Sekolah dibangun manusia sebagai tempat belajar. Di sekolah kita bertemu guru dan teman. Jadi sekolah termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/sekolah.mp3",
+    "manfaat": [
+      "tempat-belajar",
+      "tempat-bermain"
+    ],
+    "pin": {
+      "x": 47.5,
+      "y": 62.5
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/sekolah.webp"
+  },
+  {
+    "id": "puskesmas",
+    "nama": "Puskesmas",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Puskesmas dibangun manusia untuk merawat warga yang sakit. Di sana ada dokter, perawat, dan obat. Jadi puskesmas termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/puskesmas.mp3",
+    "manfaat": [
+      "tempat-berobat",
+      "periksa-kesehatan"
+    ],
+    "pin": {
+      "x": 82.5,
+      "y": 58.8
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/puskesmas.webp"
+  },
+  {
+    "id": "jalan",
+    "nama": "Jalan",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Jalan dibuat manusia dari batu dan aspal. Jalan menghubungkan rumah, sekolah, dan pasar. Jadi jalan termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/jalan.mp3",
+    "manfaat": [
+      "dilewati-kendaraan",
+      "menghubungkan-kampung"
+    ],
+    "pin": {
+      "x": 65.8,
+      "y": 73.8
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/jalan.webp"
+  },
+  {
+    "id": "jembatan",
+    "nama": "Jembatan",
+    "kategori": "buatan",
+    "diskusi": false,
+    "info": "Jembatan dibangun manusia di atas Sungai Siak. Warga bisa menyeberang tanpa naik perahu. Jadi jembatan termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/jembatan.mp3",
+    "manfaat": [
+      "menyeberangi-sungai",
+      "menghubungkan-kampung"
+    ],
+    "pin": {
+      "x": 40.0,
+      "y": 39.8
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/jembatan.webp"
+  },
+  {
+    "id": "taman",
+    "nama": "Taman",
+    "kategori": "buatan",
+    "diskusi": true,
+    "info": "Taman penuh pohon dan bunga yang segar. Tanamannya ditanam dan ditata oleh manusia. Jadi taman termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/taman.mp3",
+    "manfaat": [
+      "udara-segar",
+      "tempat-bermain"
+    ],
+    "pin": {
+      "x": 46.7,
+      "y": 86.2
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/taman.webp"
+  },
+  {
+    "id": "danau-lembah-sari",
+    "nama": "Danau Buatan Lembah Sari",
+    "kategori": "buatan",
+    "diskusi": true,
+    "info": "Danau Buatan Lembah Sari ada di Rumbai, Pekanbaru. Danau ini sengaja dibuat oleh manusia. Jadi danau ini termasuk lingkungan buatan.",
+    "audio": "/audio/elemen/danau-lembah-sari.mp3",
+    "manfaat": [
+      "tempat-rekreasi",
+      "menampung-air"
+    ],
+    "pin": {
+      "x": 77.5,
+      "y": 83.5
+    },
+    "rujukan": "Perlu validasi ahli materi",
+    "gambar": "/aset/elemen/danau-lembah-sari.svg"
+  }
+]

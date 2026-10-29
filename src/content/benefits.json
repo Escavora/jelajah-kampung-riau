@@ -1,0 +1,22 @@
+[
+  { "id": "tempat-ikan", "teks": "Tempat ikan hidup", "audio": "/audio/manfaat/tempat-ikan.mp3" },
+  { "id": "jalur-perahu", "teks": "Jalur perahu", "audio": "/audio/manfaat/jalur-perahu.mp3" },
+  { "id": "sumber-air", "teks": "Sumber air", "audio": "/audio/manfaat/sumber-air.mp3" },
+  { "id": "udara-segar", "teks": "Udara segar", "audio": "/audio/manfaat/udara-segar.mp3" },
+  { "id": "rumah-hewan", "teks": "Rumah hewan", "audio": "/audio/manfaat/rumah-hewan.mp3" },
+  { "id": "menampung-air", "teks": "Menampung air hujan", "audio": "/audio/manfaat/menampung-air.mp3" },
+  { "id": "tempat-bermain", "teks": "Tempat bermain", "audio": "/audio/manfaat/tempat-bermain.mp3" },
+  { "id": "tempat-berkumpul", "teks": "Tempat berkumpul", "audio": "/audio/manfaat/tempat-berkumpul.mp3" },
+  { "id": "tempat-tinggal", "teks": "Tempat tinggal", "audio": "/audio/manfaat/tempat-tinggal.mp3" },
+  { "id": "berteduh", "teks": "Berteduh dari hujan", "audio": "/audio/manfaat/berteduh.mp3" },
+  { "id": "tempat-musyawarah", "teks": "Tempat musyawarah", "audio": "/audio/manfaat/tempat-musyawarah.mp3" },
+  { "id": "belajar-budaya", "teks": "Belajar budaya Melayu", "audio": "/audio/manfaat/belajar-budaya.mp3" },
+  { "id": "tempat-ibadah", "teks": "Tempat ibadah", "audio": "/audio/manfaat/tempat-ibadah.mp3" },
+  { "id": "tempat-belajar", "teks": "Tempat belajar", "audio": "/audio/manfaat/tempat-belajar.mp3" },
+  { "id": "tempat-berobat", "teks": "Tempat berobat", "audio": "/audio/manfaat/tempat-berobat.mp3" },
+  { "id": "periksa-kesehatan", "teks": "Periksa kesehatan", "audio": "/audio/manfaat/periksa-kesehatan.mp3" },
+  { "id": "dilewati-kendaraan", "teks": "Dilewati kendaraan", "audio": "/audio/manfaat/dilewati-kendaraan.mp3" },
+  { "id": "menghubungkan-kampung", "teks": "Menghubungkan kampung", "audio": "/audio/manfaat/menghubungkan-kampung.mp3" },
+  { "id": "menyeberangi-sungai", "teks": "Menyeberangi sungai", "audio": "/audio/manfaat/menyeberangi-sungai.mp3" },
+  { "id": "tempat-rekreasi", "teks": "Tempat rekreasi", "audio": "/audio/manfaat/tempat-rekreasi.mp3" }
+]

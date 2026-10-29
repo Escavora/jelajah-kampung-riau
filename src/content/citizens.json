@@ -1,0 +1,47 @@
+[
+  {
+    "id": "salat-jumat",
+    "nama": "Pak Rahmat",
+    "kata": "Aku mau salat Jumat.",
+    "audio": "/audio/warga/salat-jumat.mp3",
+    "elemenTepat": ["masjid-an-nur"],
+    "petunjuk": "Pak Rahmat mau beribadah. Ia butuh tempat salat.",
+    "audioPetunjuk": "/audio/warga/salat-jumat-petunjuk.mp3"
+  },
+  {
+    "id": "demam",
+    "nama": "Bu Ani",
+    "kata": "Aku sedang demam.",
+    "audio": "/audio/warga/demam.mp3",
+    "elemenTepat": ["puskesmas"],
+    "petunjuk": "Bu Ani masih demam. Ia butuh tempat berobat.",
+    "audioPetunjuk": "/audio/warga/demam-petunjuk.mp3"
+  },
+  {
+    "id": "seberang",
+    "nama": "Bang Udin",
+    "kata": "Aku mau ke seberang Sungai Siak.",
+    "audio": "/audio/warga/seberang.mp3",
+    "elemenTepat": ["jembatan"],
+    "petunjuk": "Bang Udin tidak membawa perahu. Ia butuh jalan di atas sungai.",
+    "audioPetunjuk": "/audio/warga/seberang-petunjuk.mp3"
+  },
+  {
+    "id": "musyawarah",
+    "nama": "Datuk Said",
+    "kata": "Warga mau musyawarah kampung.",
+    "audio": "/audio/warga/musyawarah.mp3",
+    "elemenTepat": ["selaso-jatuh-kembar"],
+    "petunjuk": "Datuk Said mengajak warga berkumpul. Mereka butuh balai pertemuan adat.",
+    "audioPetunjuk": "/audio/warga/musyawarah-petunjuk.mp3"
+  },
+  {
+    "id": "mencuci",
+    "nama": "Kak Siti",
+    "kata": "Aku mau mencuci baju.",
+    "audio": "/audio/warga/mencuci.mp3",
+    "elemenTepat": ["rumah", "sungai-siak", "anak-sungai"],
+    "petunjuk": "Kak Siti butuh air untuk mencuci. Di mana ada air?",
+    "audioPetunjuk": "/audio/warga/mencuci-petunjuk.mp3"
+  }
+]
