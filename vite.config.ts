@@ -11,7 +11,7 @@ export default defineConfig({
     // Offline setelah dibuka sekali (prd.md F-15). Aset audio besar di-cache saat dipakai, bukan di-precache.
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'maskot.png'],
+      includeAssets: ['favicon.png', 'favicon-32.png', 'apple-touch-icon.png', 'maskot.png'],
       manifest: {
         name: 'Jelajah Kampung Riau',
         short_name: 'Jelajah Riau',

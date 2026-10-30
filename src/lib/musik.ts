@@ -24,7 +24,8 @@ import { konteks } from './konteks'
  * - `tenang`: arpeggio dan bass pelan saja, untuk layar kerja, supaya anak tetap fokus (design.md 11).
  * Suara latar (sungai dan kicau burung) dinyalakan terpisah. Saat Badrul bicara, semuanya merendah.
  *
- * Browser baru mengizinkan suara setelah anak menyentuh layar, jadi musik mulai pada sentuhan pertama.
+ * Musik dicoba bunyi langsung saat dibuka. Browser umumnya baru mengizinkan suara setelah anak
+ * menyentuh layar, jadi kalau ditolak, musik mulai pada sentuhan pertama.
  */
 
 export type Suasana = 'meriah' | 'tenang'
@@ -393,16 +394,32 @@ export function efek(nama: NamaEfek) {
 
 // ---- Pengait ke aplikasi ------------------------------------------------------------------
 
-/** Pasang sekali di awal. Musik baru boleh bunyi setelah anak menyentuh layar. */
+/**
+ * Gerakan yang dianggap browser sebagai "sentuhan pengguna". Pada layar sentuh, `pointerdown`
+ * tidak dihitung, hanya `pointerup`, `touchend`, dan `click`, jadi semuanya didengarkan.
+ */
+const GERAKAN = ['pointerdown', 'pointerup', 'touchend', 'click', 'keydown'] as const
+
+/**
+ * Pasang sekali di awal. Musik dicoba langsung bunyi saat aplikasi dibuka. Kalau browser menolak
+ * (aturan autoplay), dicoba lagi di setiap sentuhan sampai berhasil, jadi sentuhan pertama di mana pun
+ * sudah cukup tanpa harus menekan tombol musik.
+ */
 export function mulaiMusikSetelahSentuhan() {
-  const mulai = () => {
-    window.removeEventListener('pointerdown', mulai)
-    window.removeEventListener('keydown', mulai)
+  const coba = () => {
     sudahDisentuh = true
     sinkron()
+    if (!hidup) return lepas()
+    void konteks()
+      .resume()
+      .then(() => {
+        if (konteks().state === 'running') lepas()
+      })
+      .catch(() => {})
   }
-  window.addEventListener('pointerdown', mulai)
-  window.addEventListener('keydown', mulai)
+  const lepas = () => GERAKAN.forEach((g) => window.removeEventListener(g, coba))
+  GERAKAN.forEach((g) => window.addEventListener(g, coba))
+  coba()
   document.addEventListener('visibilitychange', sinkron)
   // Voice over berbicara: musik dan suara latar merendah supaya suara Badrul jelas.
   subscribeAudio(() => {
