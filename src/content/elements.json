@@ -199,7 +199,8 @@
     "audio": "/audio/elemen/jembatan.mp3",
     "manfaat": [
       "menyeberangi-sungai",
-      "menghubungkan-kampung"
+      "menghubungkan-kampung",
+      "dilewati-kendaraan"
     ],
     "pin": {
       "x": 40.0,
@@ -235,7 +236,8 @@
     "audio": "/audio/elemen/danau-lembah-sari.mp3",
     "manfaat": [
       "tempat-rekreasi",
-      "menampung-air"
+      "menampung-air",
+      "tempat-ikan"
     ],
     "pin": {
       "x": 77.5,
